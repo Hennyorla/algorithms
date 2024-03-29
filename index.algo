@@ -1,0 +1,29 @@
+//Algorithm that read a sentence, which ends with a point, character by character, and to determine:
+
+
+
+1. Initialize three counters: lengthCounter = 0, wordCounter = 0, vowelCounter = 0.
+2. Read the input sentence character by character until you encounter the point.
+3. For each character:
+   - Increment the lengthCounter by 1.
+   - If the character is a vowel (a, e, i, o, u or their uppercase counterparts), increment the vowelCounter by 1.
+   - If the character is a space, increment the wordCounter by 1 (assuming words are separated by single spaces).
+4. Print the values of lengthCounter, wordCounter, and vowelCounter.
+
+// pseudocode
+lengthCounter = 0
+wordCounter = 0
+vowelCounter = 0
+
+while character != '.':
+    character = readNextCharacter()
+    lengthCounter += 1
+    if character is a vowel:
+        vowelCounter += 1
+    if character is a space:
+        wordCounter += 1
+
+print "Length of the sentence:", lengthCounter
+print "Number of words in the sentence:", wordCounter
+print "Number of vowels in the sentence:", vowelCounter
+ 
